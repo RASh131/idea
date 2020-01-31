@@ -1,0 +1,85 @@
+{{ template "head" }}
+    <body>
+        <div class="header-menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="//localhost:8080">サイト名</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="login-left">
+                    <div class="login-title">
+                        <h1>サイト名</h1>
+                        <h4>さあ、始めましょう</h4>
+                    </div>
+
+                        <div class="login-form">
+                            <form id="login "action="//localhost:8080/user/login" method="post">
+                                <div class="form-group">
+                                    <label for="inputUserName" class="sr-only">アカウント名を入力してください</label>
+                                    <input type="userName" name="username" class="form-control" id="inputAccount" placeholder="アカウント名" required
+                                        autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputUserName" class="sr-only">パスワードを入力してください</label>
+                                    <input type="userName" name="password" class="form-control" id="inputUserPass" placeholder="パスワード" required
+                                        autofocus>
+                                </div>
+                                <div>
+                                    <input type="submit" class="btn btn-primary btn-block btn-lg" id="enterRoom" value="ログイン">
+                                </div>
+                                <a href="//localhost:8080/signup">アカウントを作成</a>
+                            </form>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="login-right">
+                    <div class="login-syosai">
+                        <p>(サイト名)は，アイディアマンとそれを実現できる人を繋げて，今までになかったものを作り出します。</p>
+                        <img src="./assets/img/image1.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    </body>
+{{ template "foot" }}

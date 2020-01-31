@@ -1,0 +1,53 @@
+/*
+.login-form {
+    border: 2px solid #aaa;
+    width: 300px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: blue;
+}
+
+.signup-form {
+    border: 2px solid #aaa;
+    width: 300px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: blue;
+}
+*/
+@charset "UTF-8";
+
+.login-left {
+    height: 100%;
+    margin: 10%;
+    text-align: center;
+}
+
+.login-title {
+    position: relative;
+    top: 25%;
+}
+
+.login-form {
+    top:50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.login-right {
+    height: 100%;
+    margin: 10%;
+    text-align: center;
+}
+
+.login-syosai {
+    position: relative;
+    top: 25%;
+}
